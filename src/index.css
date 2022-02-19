@@ -6,6 +6,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #ddcebd !important;
 }
 
 code {
@@ -17,13 +18,6 @@ a{
   color: black !important;
 }
 
-.mainBackground{
-  width: 100%;
-  position: absolute;
-  top: 0;
-  background-color: #ddcebd;
-  z-index: -999;
-}
 
 
 .padding1{

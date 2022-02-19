@@ -56,7 +56,7 @@ function App() {
 
 
   return (
-    <div className="mainBackground App">
+    <div className="App">
       <BrowserRouter>
         <NavWrapper productsInCart={productsInCart}/>
         <Routes>

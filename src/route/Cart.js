@@ -38,8 +38,8 @@ function Cart({productsInCart, setProductsInCart}) {
         .redirectToCheckout({
           lineItems: lineItems,
           mode: "payment",
-          successUrl: "http://localhost:3000/",
-          cancelUrl: "http://localhost:3000/about",
+          successUrl: "http://bettercoffeereact.netlify.app/",
+          cancelUrl: "http://bettercoffeereact.netlify.app/cart",
           customerEmail: email
         })
         .then((response) => {
