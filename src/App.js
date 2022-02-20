@@ -50,8 +50,16 @@ function App() {
   ])
 
   useEffect(()=>{
+    const data = localStorage.getItem('myCartList');
+    if (data){
+      setProductsInCart(JSON.parse(data))
+    }
     
+  },[])
+
+  useEffect(()=>{
     
+    localStorage.setItem('myCartList', JSON.stringify(productsInCart))
   })
 
 
