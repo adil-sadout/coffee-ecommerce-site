@@ -1,7 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import "./index.css";
 import Home from "./route/Home";
-import About from "./route/About";
 import Shop from "./route/Shop";
 import Cart from "./route/Cart";
 import NavWrapper from "./components/navbar/NavWrapper";
@@ -69,7 +68,6 @@ function App() {
         <NavWrapper productsInCart={productsInCart}/>
         <Routes>
           <Route path="/" element={<Home/>} />
-          <Route path="/About" element={<About />} />
           <Route path="/Shop" element={<Shop products={products} useProduct={useProduct} productsInCart={productsInCart} setProductsInCart={setProductsInCart} />} />
           <Route path="/Cart" element={<Cart productsInCart={productsInCart} setProductsInCart={setProductsInCart} />} />
         </Routes>
